@@ -8,5 +8,6 @@ https://www.kaggle.com/datasets/aniruddhawankhede/mental-heath-analysis-among-te
   Cons: Will need to clean the dataset of every column except for age, screen time hours, and survey stress score. Limited age range may not generalize to broader population. Confounding variables such as exercise and sleep are not being analyzed by could influence results. 
 # Data pulling (where/how did you get it?): Kaggle. 
 # Data cleaning (what choices did you make/what was selected/deleted and why?):
+  We chose to remove every column except for age, screen time hours, survey stress score and User Id by selecting only these three for a new dataframe but we removed the User_ID column after confirming that it contained no duplicate values. Since it was only used as a unique identifier and not needed for analysis, it was dropped to simplify the dataset. We did this because these three columns are the only ones necessary for our data analysis, and the other columns only crowd the data. Screen time hours is a float by default, so we wanted to round these numbers to the nearest integer to match the other variables. We did this by using the .astype('int') function on our new dataframe.
 # Visualization reflections:
 # Insights (Where is this helpful? What conclusions should be drawn?):
