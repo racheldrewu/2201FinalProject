@@ -1,7 +1,7 @@
 # Title: Mental Health and Screen Time in Youth
 
 
-# Objective: Looking at the intersection of and possible relationship(s) between mental health and screen time in teenagers.
+# Objective: Looking at the intersection of and possible relationship(s) between mental health and screen time in teenagers
 
 # Data source: Kaggle
 https://www.kaggle.com/datasets/aniruddhawankhede/mental-heath-analysis-among-teenagers (Direct mental health/screen time w/ ages 13-18 (15.5 yr mean))
