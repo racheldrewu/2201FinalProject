@@ -23,7 +23,7 @@ We got our data from Kaggle. We downloaded it from the Kaggle website, the data 
   We chose to remove every column except for age, screen time hours, survey stress score and User Id by selecting only these three for a new dataframe but we removed the User_ID column after confirming that it contained no duplicate values. Since it was only used as a unique identifier and not needed for analysis, it was dropped to simplify the dataset. We did this because these three columns are the only ones necessary for our data analysis, and the other columns only crowd the data. Screen time hours is a float by default, so we wanted to round these numbers to the nearest integer to match the other variables. We did this by using the .astype('int') function on our new dataframe.
 # Visualization reflections:
 ![Boxplot - Stress vs Screen Time](Figures/boxplot_stress_vs_screen_time.png)
-![Lineplot - Avg Screen Time by Age](Figures/lineplot_Average_Screen_Time_vs_age.png)
+![Lineplot - Avg Screen Time_by Age](Figures/lineplot_Average_Screen_time_vs_age.png)
 ![Lineplot - Avg Stress Score by Age](Figures/lineplot_Average_Survey_stress_score_by_Age.png)
 ![Correlation Matrix](Figures/CorrelationMatrix.png)
 
