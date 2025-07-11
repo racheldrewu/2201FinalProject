@@ -22,10 +22,11 @@ We got our data from Kaggle. We downloaded it from the Kaggle website, the data 
 # Data cleaning (what choices did you make/what was selected/deleted and why?):
   We chose to remove every column except for age, screen time hours, survey stress score and User Id by selecting only these three for a new dataframe but we removed the User_ID column after confirming that it contained no duplicate values. Since it was only used as a unique identifier and not needed for analysis, it was dropped to simplify the dataset. We did this because these three columns are the only ones necessary for our data analysis, and the other columns only crowd the data. Screen time hours is a float by default, so we wanted to round these numbers to the nearest integer to match the other variables. We did this by using the .astype('int') function on our new dataframe.
 # Visualization reflections:
-![Boxplot - Stress vs Screen Time](Figures/boxplot_stress_vs_screen_time.png)
+![Boxplot – Stress vs Screen Time](Figures/boxplot_stress_vs_screen_time.png)
 ![Correlation Matrix](Figures/CorrelationMatrix.png)
 ![Lineplot – Avg Screen Time by Age](Figures/lineplot_Average_Screen_time_vs_age.png)
 ![Lineplot – Avg Stress Score by Age](Figures/lineplot_Average_Survey_stress_score_by_Age.png)
+
 
 
 Screen Time by Stress Score Boxplot: In this boxplot, each survey stress score value shares the same minimum, maximum, lower, and upper quartile screen time hour values. All boxes except for one (stress=4) show a median screen time hours as ~7.1. This means that screen time hours do not vary much at all by stress scores. In other words, people of various stress values shared roughly the same screen time hourage.
