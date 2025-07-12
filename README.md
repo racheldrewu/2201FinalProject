@@ -24,7 +24,7 @@ We got our data from Kaggle. We downloaded it from the Kaggle website, the data 
 # Visualization reflections:
 ![lineplot Avg screen time vs age](Figures/lineplot_Average_Screen_time_vs_age.png)
 ![lineplot Avg survey stress score vs age](Figures/lineplot_Average_Survey_stress_score_by_Age.png)
-
+![boxplot stress vs screen time](Figures/boxplot_stress_vs_screen_time.png)
 
 
 
