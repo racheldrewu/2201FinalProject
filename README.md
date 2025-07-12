@@ -22,15 +22,17 @@ We got our data from Kaggle. We downloaded it from the Kaggle website, the data 
 # Data cleaning (what choices did you make/what was selected/deleted and why?):
   We chose to remove every column except for age, screen time hours, survey stress score and User Id by selecting only these three for a new dataframe but we removed the User_ID column after confirming that it contained no duplicate values. Since it was only used as a unique identifier and not needed for analysis, it was dropped to simplify the dataset. We did this because these three columns are the only ones necessary for our data analysis, and the other columns only crowd the data. Screen time hours is a float by default, so we wanted to round these numbers to the nearest integer to match the other variables. We did this by using the .astype('int') function on our new dataframe.
 # Visualization reflections:
+
 ![lineplot Avg screen time vs age](Figures/lineplot_Average_Screen_time_vs_age.png)
-![lineplot Avg survey stress score vs age](Figures/lineplot_Average_Survey_stress_score_by_Age.png)
-![boxplot stress vs screen time](Figures/boxplot_stress_vs_screen_time.png)
-
-
-
-Screen Time by Stress Score Boxplot: In this boxplot, each survey stress score value shares the same minimum, maximum, lower, and upper quartile screen time hour values. All boxes except for one (stress=4) show a median screen time hours as ~7.1. This means that screen time hours do not vary much at all by stress scores. In other words, people of various stress values shared roughly the same screen time hourage.
 Average Screen Time by Age Line Graph: In this line graph, the age with the least average screen hours is 13, while the age with the highest is 16. Overall, there is a general increase in screen time hours from the age of 13 to 16, and then it drops to age 18.
+
+![lineplot Avg survey stress score vs age](Figures/lineplot_Average_Survey_stress_score_by_Age.png)
 Average Survey Stress Score by Age: In this line graph, we cannot identify a clear pattern of how age affects survey stress scores. The age that had the lowest average stress scores was 14, and the highest was 18. Because we did not plot this against screen time, it is impossible to tell from this graph if stress levels are related to screen time. However, if there were related, the Average Screen Time by Age and Average Survey Stress Score by Age graphs would share similar patterns/shapes, and they do not. 
+
+![boxplot stress vs screen time](Figures/boxplot_stress_vs_screen_time.png)
+Screen Time by Stress Score Boxplot: In this boxplot, each survey stress score value shares the same minimum, maximum, lower, and upper quartile screen time hour values. All boxes except for one (stress=4) show a median screen time hours as ~7.1. This means that screen time hours do not vary much at all by stress scores. In other words, people of various stress values shared roughly the same screen time hourage.
+
+![Correlation Matrix](Figures/CorrelationMatrix.png)
 Correlation Matrix: To confirm the existence (or lack thereof) of a relationship between age, stress, and screen time, we created a correlation matrix; age and screen time have a correlation coefficient of 0.007 (no relationship), age and stress have a correlation coefficient of 0.013 (slightly higher correlation than the previous, but still no relationship), and stress and screen time have a correlation coefficient of -0.003 (no relationship). From the correlation matrix, we can clearly see that none of the variables in our dataframe share any correlation. 
 
 # Insights (Where is this helpful? What conclusions should be drawn?):
