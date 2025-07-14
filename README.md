@@ -1,7 +1,7 @@
 # Title: Mental Health and Screen Time in Youth
 
 
-# Objective: Looking at the intersection of and possible relationship(s) between mental health and screen time in teenagers
+# Objective: Looking at the intersection of and possible relationship(s) between mental health and screen time among teenagers
 
 # Data source: Kaggle
 https://www.kaggle.com/datasets/aniruddhawankhede/mental-heath-analysis-among-teenagers (Direct mental health/screen time w/ ages 13-18 (15.5 yr mean))
@@ -20,7 +20,7 @@ Histogram shows minimal variation between age groups, which is ideal because the
 We got our data from Kaggle. We downloaded it from the Kaggle website, the data was named as Mental_Heath_Analysis_Among_Teenagers by Aniruddha Wankhede. The dataset contains survey response about screen time, sleep patterns and their possible connection to menatl health among teenagers.
 
 # Data cleaning (what choices did you make/what was selected/deleted and why?):
-  We chose to remove every column except for age, screen time hours, survey stress score and User Id by selecting only these three for a new dataframe but we removed the User_ID column after confirming that it contained no duplicate values. Since it was only used as a unique identifier and not needed for analysis, it was dropped to simplify the dataset. We did this because these three columns are the only ones necessary for our data analysis, and the other columns only crowd the data. Screen time hours is a float by default, so we wanted to round these numbers to the nearest integer to match the other variables. We did this by using the .astype('int') function on our new dataframe.
+ There wasn’t a lot of data cleaning needed because the original dataset had already been mostly cleaned. However, we did make a few adjustments. First,  We chose to remove every column except for age, screen time hours, survey stress score and User Id by selecting only these three for a new dataframe but we removed the User_ID column after confirming that it contained no duplicate values. Since it was only used as a unique identifier and not needed for analysis, it was dropped to simplify the dataset. We did this because these three columns are the only ones necessary for our data analysis, and the other columns only crowd the data. Screen time hours is a float by default, so we wanted to round these numbers to the nearest integer to match the other variables. We did this by using the .astype('int') function on our new dataframe.
 # Visualization reflections:
 
 ![lineplot Avg screen time vs age](Figures/lineplot_Average_Screen_time_vs_age.png)
